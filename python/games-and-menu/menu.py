@@ -20,21 +20,22 @@ def main() -> None:
 
         print("==========  Game Selection ==========")
         print("1.) Guess My Number")
-        print("2.) Rock, Paper, Scissors")
-        print("3.) Quit")
+        print("3.) Mike-8 (Magic 8 Ball)")
+        print("4.) Quit")
 
         choice = input("Please Select a Game!\n> ").lower().strip()
-
-        if choice in ["1", "guess my number"]:
+        
+         if choice in ["1", "guess my number"]:
             play_number_game()
         elif choice in ["2", "rock, paper, scissors"]:
             play_rps()
-        elif choice in ["3", "quit", "exit"]:
+        elif choice in ["3", "Mike-8", "Magic 8 Ball", "Mike-8 (Magic 8 Ball)"]:
+            mike_8_ball()
+        elif choice in ["4", "quit", "exit"]:
             print("Thanks for stopping by! See you later!")
             break
         else:
             print("Sorry, that is not a valid choice! Please select a game listed above!")
-
 # run it!
 
 if __name__ == "__main__":
