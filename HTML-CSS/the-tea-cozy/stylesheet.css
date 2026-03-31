@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Body: General Styling*/
+
+body {
+    padding-top: 69px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+/*Header, Links, Paragraphs: General Styling*/
+
+header {
+    position: fixed; /*Remember: fixed takes the this element out of the normal flow. You have to be specific, to get it to behave the way you want it to.*/
+    top: 0; /*Specify where the fixed elemnt is. 0 = top of the bar!*/
+    left: 0;
+    width: 100%; /*Ensures the width stretches across the screen.*/
+    z-index: 1000;
+}
+
+a {
+    color: seashell;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+h2, h3, h4, h5 {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/*Header Classes*/
+
+.site-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    background-color: black;
+    border-bottom: 1px solid seashell
+}
+
+.logo {
+    height: 50px;
+    margin-left: 10px;
+}
+
+/*Nav Classes*/
+
+.nav {
+    margin-right: 10px;
+}
+
+.list-items {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+/*Mission Section*/
+
+.mission {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 1200px;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mission-item1 {
+    padding-bottom: 5px;
+    width: 1200px;
+    background-color: black;
+    text-align: center;
+}
+
+.mission-item2 {
+    padding-bottom: 5px;
+    width: 1200px;
+    background-color: black;
+    text-align: center;
+}
+
+/*Featured Section*/
+
+.featured-container {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 1000px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.featured-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
+}
+
+.featured-items {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    margin-bottom: 10px;
+    height: 200px;
+    width: 300px;
+}
+
+/*Locations Section*/
+
+.locations-container {
+    margin:0 auto;
+    margin-bottom: 15px;
+    height: 500px;
+    width: 1200px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+    gap: 15px
+}
+
+.card-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.locations-card {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 1;
+    background-color: black;
+    gap: 40px;
+}
+
+/*Contact Section*/
+
+.contact {
+    margin: 0 auto;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/*Footer Section*/
+
+footer {
+    margin-left: 20px;
+    text-align: left;
+    padding:10px;
+}
